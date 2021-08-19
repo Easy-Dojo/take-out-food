@@ -24,7 +24,7 @@ describe('Test Promotion', function () {
     }]
     const result = calculateBestPromotionAmount(orderItems)
     let expected = {
-      order: orderItems,
+      orderItems: orderItems,
       bestPromotion: {
         promotionType: {
           type: '指定菜品半价',

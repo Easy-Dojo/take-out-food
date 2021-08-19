@@ -40,7 +40,7 @@ const calculateBestPromotionAmount = function (orderItems) {
   const bestPromotion = fullReductionPromotion.savedAmount > discountPromotion.savedAmount ? fullReductionPromotion : discountPromotion
 
   return {
-    order: orderItems,
+    orderItems,
     bestPromotion,
     amount: getTotalAmount(orderItems)-bestPromotion.savedAmount
   }
